@@ -5,6 +5,7 @@ This project is for my YouTube video on how to automatically update file content
 
 Bucket Policy for Website Hosting on AWS S3 (replace "bucket-name" with your actual s3 bucket name):
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -17,9 +18,11 @@ Bucket Policy for Website Hosting on AWS S3 (replace "bucket-name" with your act
         }
     ]
 }
+```
 
 IAM policy statement to add to the IAM role used by CodeBuild (replace "bucket-name" with your actual s3 bucket name):
 
+```
 {
     "Effect": "Allow",
     "Action": [
@@ -39,3 +42,4 @@ IAM policy statement to add to the IAM role used by CodeBuild (replace "bucket-n
         "arn:aws:s3:::bucket-name"
     ]
 }
+```
