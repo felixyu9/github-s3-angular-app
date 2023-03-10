@@ -10,6 +10,8 @@ phases:
   build:
     commands:
       - echo "Building Angular project..."
+      - sudo npm install react-scripts
+      - sudo npm run build
       - ng build --prod
   post_build:
     commands:
